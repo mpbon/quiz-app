@@ -1896,6 +1896,11 @@ __webpack_require__.r(__webpack_exports__);
 
       if (answer.id === question.answer_id) {
         this.currentQuestion++;
+        var audio = new Audio("sounds/correct-sound.mp3");
+        audio.play();
+      } else {
+        var audio = new Audio("sounds/incorrect-sound.mp3");
+        audio.play();
       }
     },
     findQuestionById: function findQuestionById(id) {
@@ -37253,7 +37258,8 @@ var render = function() {
                       attrs: { type: "button" },
                       on: {
                         click: function($event) {
-                          return _vm.selectAnswer(answer)
+                          _vm.selectAnswer(answer)
+                          _vm.playAudio()
                         }
                       }
                     },

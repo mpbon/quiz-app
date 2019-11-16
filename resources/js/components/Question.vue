@@ -13,7 +13,7 @@
 
                     </div>
                     <div class="card-body">
-                        <button type="button" class="btn btn-info" @click="selectAnswer(answer)" v-for="answer in answers" v-if="answer.question_id === currentQuestion">
+                        <button type="button" class="btn btn-info" @click="selectAnswer(answer);playAudio()" v-for="answer in answers" v-if="answer.question_id === currentQuestion">
                             {{ answer.choice }}
                         </button>
 
@@ -61,6 +61,12 @@
                 var question = this.findQuestionById(answer.question_id);
                 if (answer.id === question.answer_id){
                     this.currentQuestion++;
+                    var audio = new Audio("sounds/correct-sound.mp3");
+                    audio.play();
+                }
+                else {
+                    var audio = new Audio("sounds/incorrect-sound.mp3");
+                    audio.play();
                 }
             },
 
@@ -69,7 +75,7 @@
                     return question.id === id
                 })[0];
             },
-
+            
         },
         mounted(){
             this.fetchQuestions();
