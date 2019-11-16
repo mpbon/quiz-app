@@ -1863,7 +1863,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1907,6 +1906,10 @@ __webpack_require__.r(__webpack_exports__);
       return this.questions.filter(function (question) {
         return question.id === id;
       })[0];
+    },
+    hoverAudio: function hoverAudio() {
+      var a = new Audio("sounds/hover-sound.mp3");
+      a.play();
     }
   },
   mounted: function mounted() {
@@ -37257,9 +37260,11 @@ var render = function() {
                       staticClass: "btn btn-info",
                       attrs: { type: "button" },
                       on: {
+                        mouseover: function($event) {
+                          return _vm.hoverAudio()
+                        },
                         click: function($event) {
-                          _vm.selectAnswer(answer)
-                          _vm.playAudio()
+                          return _vm.selectAnswer(answer)
                         }
                       }
                     },

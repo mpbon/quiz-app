@@ -13,10 +13,9 @@
 
                     </div>
                     <div class="card-body">
-                        <button type="button" class="btn btn-info" @click="selectAnswer(answer);playAudio()" v-for="answer in answers" v-if="answer.question_id === currentQuestion">
+                        <button type="button" class="btn btn-info" @mouseover="hoverAudio()" @click="selectAnswer(answer)" v-for="answer in answers" v-if="answer.question_id === currentQuestion">
                             {{ answer.choice }}
                         </button>
-
                     </div>
                 </div>
             </div>
@@ -39,6 +38,7 @@
         },
 
         methods: {
+
             fetchQuestions(){
                 var self = this;
                 axios({
@@ -48,6 +48,7 @@
                     self.questions = response.data;
                 });
             },
+
             fetchAnswers(){
                 var self = this;
                 axios({
@@ -57,6 +58,7 @@
                     self.answers = response.data;
                 });
             },
+
             selectAnswer(answer){
                 var question = this.findQuestionById(answer.question_id);
                 if (answer.id === question.answer_id){
@@ -75,7 +77,12 @@
                     return question.id === id
                 })[0];
             },
-            
+
+            hoverAudio() {
+              var a = new Audio("sounds/hover-sound.mp3");
+              a.play();
+            },
+
         },
         mounted(){
             this.fetchQuestions();
