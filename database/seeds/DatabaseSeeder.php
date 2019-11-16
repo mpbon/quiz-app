@@ -12,88 +12,123 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         DB::table('answers')->insert([
+            // Question 1:
             [
-                'herring' => 'Software Eligibility and Optimization',
+                'choice' => 'Software Eligibility and Optimization',
                 'question_id' => 1,
             ],
             [
-                'herring' => 'Some Evil Ogres',
+                'choice' => 'Search Engine Optimization', //answer
                 'question_id' => 1,
             ],
             [
-                'herring' => 'Server Entries Object',
+                'choice' => 'Some Evil Ogres',
                 'question_id' => 1,
             ],
             [
-                'herring' => 'Mark Zuckerberg',
+                'choice' => 'Server Entries Object',
+                'question_id' => 1,
+            ],
+            // Question 2:
+            [
+                'choice' => 'Mark Zuckerberg',
                 'question_id' => 2,
             ],
             [
-                'herring' => 'Evan Me',
+                'choice' => 'Evan Me',
                 'question_id' => 2,
             ],
             [
-                'herring' => 'Cody McCoderson',
+                'choice' => 'Cody McCoderson',
                 'question_id' => 2,
             ],
             [
-                'herring' => 'A tasty dessert',
+                'choice' => 'Evan You', //answer
+                'question_id' => 2,
+            ],
+            // Question: 3
+            [
+                'choice' => 'A tasty dessert',
                 'question_id' => 3,
             ],
             [
-                'herring' => 'A coding language',
+                'choice' => 'An MVC framework', //answer
                 'question_id' => 3,
             ],
             [
-                'herring' => 'A library',
+                'choice' => 'A coding language',
                 'question_id' => 3,
             ],
             [
-                'herring' => 'Standard Query Language',
+                'choice' => 'A library',
+                'question_id' => 3,
+            ],
+            // Question: 4
+            [
+                'choice' => 'Standard Query Language',
                 'question_id' => 4,
             ],
             [
-                'herring' => 'Server Query Language',
+                'choice' => 'Server Query Language',
                 'question_id' => 4,
             ],
             [
-                'herring' => 'Some Quick Lemurs',
+                'choice' => 'Some Quick Lemurs',
                 'question_id' => 4,
             ],
             [
-                'herring' => 'Certified Style System',
+                'choice' => 'Structured Query Language', //answer
+                'question_id' => 4,
+            ],
+            // Question: 5
+            [
+                'choice' => 'Certified Style System',
                 'question_id' => 5,
             ],
             [
-                'herring' => 'Coded Style Sheets',
+                'choice' => 'Coded Style Sheets',
                 'question_id' => 5,
             ],
             [
-                'herring' => 'Coding Standard Syntax',
+                'choice' => 'Coding Standard Syntax',
                 'question_id' => 5,
             ],
             [
-                'herring' => '<header>',
+                'choice' => 'Cascading Style Sheets', //answer
+                'question_id' => 5,
+            ],
+            // Question: 6
+            [
+                'choice' => '<h1>', //answer
                 'question_id' => 6,
             ],
             [
-                'herring' => '<h6>',
+                'choice' => '<header>',
                 'question_id' => 6,
             ],
             [
-                'herring' => '<head>',
+                'choice' => '<h6>',
                 'question_id' => 6,
             ],
             [
-                'herring' => '<image src="image.gif" alt="MyImage">',
+                'choice' => '<head>',
+                'question_id' => 6,
+            ],
+            // Question: 7
+            [
+                'choice' => '<image src="image.gif" alt="MyImage">',
                 'question_id' => 7,
             ],
             [
-                'herring' => '<img href="image.gif" alt="MyImage">',
+                'choice' => '<img src="image.gif" alt="MyImage">', // answer
                 'question_id' => 7,
             ],
             [
-                '<img alt="MyImage">image.gif</img>',
+                'choice' => '<img href="image.gif" alt="MyImage">',
+                'question_id' => 7,
+            ],
+            [
+                'choice' => '<img alt="MyImage">image.gif</img>',
                 'question_id' => 7,
             ],
         ]);
@@ -101,31 +136,31 @@ class DatabaseSeeder extends Seeder
         DB::table('questions')->insert([
             [
                 'question' => 'What does SEO stand for?',
-                'solution' => 'Search Engine Optimization'
+                'answer_id' => 1
             ],
             [
                 'question' => 'Who created Vue.js?',
-                'solution' => 'Evan You'
+                'answer_id' => 7
             ],
             [
                 'question' => 'What is Laravel?',
-                'solution' => 'An MVC framework'
+                'answer_id' => 9
             ],
             [
                 'question' => 'What does SQL stand for?',
-                'solution' => 'Structured Query Language'
+                'answer_id' => 15
             ],
             [
                 'question' => 'What does CSS stand for?',
-                'solution' => 'Cascading Style Sheets'
+                'answer_id' => 19
             ],
             [
                 'question' => 'Choose the correct HTML tag for the largest heading',
-                'solution' => '<h1>'
+                'answer_id' => 20
             ],
             [
                 'question' => 'What is the correct HTML for inserting an image?',
-                'solution' => '<img src="image.gif" alt="MyImage">'
+                'answer_id' => 25
             ],
         ]);
     }
