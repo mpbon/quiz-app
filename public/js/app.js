@@ -1864,9 +1864,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37237,15 +37234,17 @@ var render = function() {
             { staticClass: "card-body" },
             _vm._l(_vm.answers, function(answer) {
               return answer.question_id === _vm.currentQuestion
-                ? _c("div", [
-                    _c("div", {}, [
+                ? _c(
+                    "button",
+                    { staticClass: "btn btn-info", attrs: { type: "button" } },
+                    [
                       _vm._v(
-                        "\n                            " +
+                        "\n                        " +
                           _vm._s(answer.choice) +
-                          "\n                        "
+                          "\n                    "
                       )
-                    ])
-                  ])
+                    ]
+                  )
                 : _vm._e()
             }),
             0

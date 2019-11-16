@@ -6,3 +6,10 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+.card-body{
+    .btn-info{
+        margin: 5px;
+    }
+}

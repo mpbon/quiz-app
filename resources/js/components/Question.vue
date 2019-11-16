@@ -13,12 +13,9 @@
 
                     </div>
                     <div class="card-body">
-
-                        <div v-for="answer in answers" v-if="answer.question_id === currentQuestion">
-                            <div class="">
-                                {{ answer.choice }}
-                            </div>
-                        </div>
+                        <button type="button" class="btn btn-info" v-for="answer in answers" v-if="answer.question_id === currentQuestion">
+                            {{ answer.choice }}
+                        </button>
 
                     </div>
                 </div>
