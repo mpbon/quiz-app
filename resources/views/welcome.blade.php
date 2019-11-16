@@ -9,6 +9,10 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
+        <script type="text/javascript" src="{{asset("./js/app.js")}}">
+
+        </script>
+
         <!-- Styles -->
         <style>
             html, body {
@@ -78,6 +82,12 @@
                     @endauth
                 </div>
             @endif
+
+            <script type="text/javascript">
+
+    
+
+            </script>
 
             <div class="content">
                 <div class="title m-b-md">

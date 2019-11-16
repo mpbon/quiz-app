@@ -14,6 +14,10 @@
                         </div>
                     @endif
 
+            <div id="app">
+                <quiz-question></quiz-question>
+            </div>
+
                     You are logged in!
                 </div>
             </div>
