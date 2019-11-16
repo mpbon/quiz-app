@@ -13,7 +13,7 @@
 
                     </div>
                     <div class="card-body">
-                        <button type="button" class="btn btn-info" v-for="answer in answers" v-if="answer.question_id === currentQuestion">
+                        <button type="button" class="btn btn-info" @click="selectAnswer(answer)" v-for="answer in answers" v-if="answer.question_id === currentQuestion">
                             {{ answer.choice }}
                         </button>
 
@@ -56,7 +56,20 @@
                 }).then(function(response){
                     self.answers = response.data;
                 });
-            }
+            },
+            selectAnswer(answer){
+                var question = this.findQuestionById(answer.question_id);
+                if (answer.id === question.answer_id){
+                    this.currentQuestion++;
+                }
+            },
+
+            findQuestionById(id){
+                return this.questions.filter(function(question){
+                    return question.id === id
+                })[0];
+            },
+
         },
         mounted(){
             this.fetchQuestions();

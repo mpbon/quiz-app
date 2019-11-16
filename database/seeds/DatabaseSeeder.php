@@ -136,31 +136,31 @@ class DatabaseSeeder extends Seeder
         DB::table('questions')->insert([
             [
                 'question' => 'What does SEO stand for?',
-                'answer_id' => 1
+                'answer_id' => 2
             ],
             [
                 'question' => 'Who created Vue.js?',
-                'answer_id' => 7
+                'answer_id' => 8
             ],
             [
                 'question' => 'What is Laravel?',
-                'answer_id' => 9
+                'answer_id' => 10
             ],
             [
                 'question' => 'What does SQL stand for?',
-                'answer_id' => 15
+                'answer_id' => 16
             ],
             [
                 'question' => 'What does CSS stand for?',
-                'answer_id' => 19
-            ],
-            [
-                'question' => 'Choose the correct HTML tag for the largest heading',
                 'answer_id' => 20
             ],
             [
+                'question' => 'Choose the correct HTML tag for the largest heading',
+                'answer_id' => 21
+            ],
+            [
                 'question' => 'What is the correct HTML for inserting an image?',
-                'answer_id' => 25
+                'answer_id' => 26
             ],
         ]);
     }

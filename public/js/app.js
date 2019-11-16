@@ -1890,6 +1890,18 @@ __webpack_require__.r(__webpack_exports__);
       }).then(function (response) {
         self.answers = response.data;
       });
+    },
+    selectAnswer: function selectAnswer(answer) {
+      var question = this.findQuestionById(answer.question_id);
+
+      if (answer.id === question.answer_id) {
+        this.currentQuestion++;
+      }
+    },
+    findQuestionById: function findQuestionById(id) {
+      return this.questions.filter(function (question) {
+        return question.id === id;
+      })[0];
     }
   },
   mounted: function mounted() {
@@ -37236,7 +37248,15 @@ var render = function() {
               return answer.question_id === _vm.currentQuestion
                 ? _c(
                     "button",
-                    { staticClass: "btn btn-info", attrs: { type: "button" } },
+                    {
+                      staticClass: "btn btn-info",
+                      attrs: { type: "button" },
+                      on: {
+                        click: function($event) {
+                          return _vm.selectAnswer(answer)
+                        }
+                      }
+                    },
                     [
                       _vm._v(
                         "\n                        " +

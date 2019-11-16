@@ -8,13 +8,13 @@ use App\Answer;
 
 class QuizController extends Controller
 {
-    public Function getQuestions(){
+    public function getQuestions(){
 
         $allQuestions = Question::all();
         return $allQuestions -> toJson();
     }
 
-    public Function getAnswers(){
+    public function getAnswers(){
 
         $allAnswers = Answer::all();
         return $allAnswers -> toJson();
