@@ -1898,6 +1898,7 @@ __webpack_require__.r(__webpack_exports__);
         var audio = new Audio("sounds/correct-sound.mp3");
         audio.play();
       } else {
+        this.currentQuestion++;
         var audio = new Audio("sounds/incorrect-sound.mp3");
         audio.play();
       }

@@ -34,7 +34,6 @@
                 ],
                 currentQuestion: 1
             }
-
         },
 
         methods: {
@@ -67,6 +66,7 @@
                     audio.play();
                 }
                 else {
+                    this.currentQuestion++;
                     var audio = new Audio("sounds/incorrect-sound.mp3");
                     audio.play();
                 }
