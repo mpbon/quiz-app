@@ -85,7 +85,10 @@
 
             <script type="text/javascript">
 
-    
+giphy api: yb7EkGKFtd6q7molvP5YMr34LiqK58D5
+request URL: https://api.giphy.com/v1/gifs/random?api_key=MoW8TB2o8sMTfVRrACvbK23yb7xRvLZj&tag=computer&rating=G
+
+
 
             </script>
 
