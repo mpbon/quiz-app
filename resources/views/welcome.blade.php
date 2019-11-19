@@ -9,7 +9,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <script type="text/javascript" src="{{asset("./js/app.js")}}">
+        <script type="text/javascript" src="{{asset("./js/app.js")}}" defer>
 
         </script>
 
@@ -83,7 +83,10 @@
                 </div>
             @endif
 
-            <giphy-results></giphy-results>
+            <div id="app">
+                <giphy-results></giphy-results>
+            </div>
+
 
             <script type="text/javascript">
 

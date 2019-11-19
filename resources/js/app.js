@@ -21,6 +21,7 @@ window.Vue = require('vue');
 
 
 Vue.component('quiz-question', require('./components/Question.vue').default);
+Vue.component('giphy-results', require('./components/gifs.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
