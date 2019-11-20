@@ -16,6 +16,7 @@
 
         <!-- Styles -->
         <style>
+        /* Styles are in the app.scss file */
         </style>
 
     </head>
