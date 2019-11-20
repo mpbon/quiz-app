@@ -17,9 +17,13 @@
             <div id="app">
                 <quiz-question></quiz-question>
             </div>
-
                     You are logged in!
                 </div>
+
+                <div class="links">
+                    <a href="https://github.com/mpbon/quiz-app"><i class="fab fa-github"></i> See the code at my GitHub account</a>
+                </div>
+
             </div>
         </div>
     </div>
