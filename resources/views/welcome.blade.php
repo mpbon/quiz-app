@@ -37,7 +37,7 @@
                         @auth
                             <a href="{{ url('/home') }}">Home</a>
                         @else
-                            <a href="{{ route('login') }}">Login to start a new game</a>
+                            <a href="{{ route('login') }}" class="hvr-bounce-in">Login to start a new game</a>
 
                             @if (Route::has('register'))
                                 <a href="{{ route('register') }}">Register</a>
@@ -51,8 +51,9 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://github.com/mpbon/quiz-app"><i class="fab fa-github"></i> See the code at my GitHub account</a>
+                    <a href="https://github.com/mpbon/quiz-app" class="hvr-icon-bounce"><i class="fab fa-github hvr-icon"></i> See the code at my GitHub account</a>
                 </div>
+
             </div>
         </div>
     </body>
