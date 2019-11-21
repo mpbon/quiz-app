@@ -40,7 +40,7 @@
                             <a href="{{ route('login') }}" class="hvr-bounce-in">Login to start a new game</a>
 
                             @if (Route::has('register'))
-                                <a href="{{ route('register') }}">Register</a>
+                                <a href="{{ route('register') }}" class="hvr-bounce-in">Register</a>
                             @endif
                         @endauth
                     </div>

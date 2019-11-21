@@ -22,7 +22,7 @@
             </div>
             <div class="flex-center position-ref">
                 <div class="links hlink">
-                    <a href="https://github.com/mpbon/quiz-app"><i class="fab fa-github"></i> See the code at my GitHub account</a>
+                    <a href="https://github.com/mpbon/quiz-app" class="hvr-icon-bounce"><i class="fab fa-github hvr-icon"></i> See the code at my GitHub account</a>
                 </div>
             </div>
         </div>

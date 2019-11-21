@@ -37309,7 +37309,7 @@ var render = function() {
                 ? _c(
                     "button",
                     {
-                      staticClass: "btn btn-info",
+                      staticClass: "btn btn-info hvr-float-shadow",
                       attrs: { type: "button" },
                       on: {
                         mouseover: function($event) {

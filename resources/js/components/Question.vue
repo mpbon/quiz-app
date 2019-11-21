@@ -11,9 +11,9 @@
                             </div>
                         </div>
 
-                    </div>
+                    </div class="question-card">
                     <div class="card-body">
-                        <button type="button" class="btn btn-info" @mouseover="hoverAudio()" @click="selectAnswer(answer)" v-for="answer in answers" v-if="answer.question_id === currentQuestion">
+                        <button type="button" class="btn btn-info hvr-float-shadow" @mouseover="hoverAudio()" @click="selectAnswer(answer)" v-for="answer in answers" v-if="answer.question_id === currentQuestion">
                             {{ answer.choice }}
                         </button>
                     </div>

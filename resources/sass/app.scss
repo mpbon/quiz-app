@@ -11,6 +11,7 @@
 @import './../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
 @import './../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
 @import './../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import './../../node_modules/hover.css/scss/hover.scss';
 
 html, body {
     background-color: #fff;
@@ -52,7 +53,7 @@ html, body {
 .links > a {
     color: #636b6f;
     padding: 0 25px;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: .1rem;
     text-decoration: none;
@@ -78,23 +79,6 @@ html, body {
 .hlink {
     margin-top: 50px;
 }
-
-.hvr-icon-bounce {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-
-.hvr-bounce-in {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+.question-card {
+    font-size: 50px;
 }
