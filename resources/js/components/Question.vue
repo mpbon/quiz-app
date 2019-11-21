@@ -3,15 +3,15 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header bg-success">
 
                         <div v-for="question in questions" v-if="question.id === currentQuestion">
-                            <div class="">
+                            <div class="question-card">
                                 {{ question.question }}
                             </div>
                         </div>
 
-                    </div class="question-card">
+                    </div>
                     <div class="card-body">
                         <button type="button" class="btn btn-info hvr-float-shadow" @mouseover="hoverAudio()" @click="selectAnswer(answer)" v-for="answer in answers" v-if="answer.question_id === currentQuestion">
                             {{ answer.choice }}

@@ -37284,11 +37284,11 @@ var render = function() {
         _c("div", { staticClass: "card" }, [
           _c(
             "div",
-            { staticClass: "card-header" },
+            { staticClass: "card-header bg-success" },
             _vm._l(_vm.questions, function(question) {
               return question.id === _vm.currentQuestion
                 ? _c("div", [
-                    _c("div", {}, [
+                    _c("div", { staticClass: "question-card" }, [
                       _vm._v(
                         "\n                            " +
                           _vm._s(question.question) +
